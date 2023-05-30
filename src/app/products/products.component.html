@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+<mat-toolbar class="example-toolbar">
+    <span class="example-spacer"></span>
+    <button mat-button (click)="addNewProduct()">Add New Products</button>
+</mat-toolbar>
+
+
+<div class="products-list">
+    <div *ngFor="let data of products">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>{{data.title}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>This card has divider and indeterminate progress as footer</p>
+                <mat-divider></mat-divider>
+            </mat-card-content>
+            <mat-card-actions>
+                <mat-card-title>{{data.price | currency:'INR'}}</mat-card-title>
+
+                <button mat-button (click)="addToCart(data)" name="addToCart"> ADD TO CART</button>
+                <!-- <button mat-button [disabled]="addToCart">+</button> -->
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+
+</div>
+
+
+
+
+<app-footer></app-footer>

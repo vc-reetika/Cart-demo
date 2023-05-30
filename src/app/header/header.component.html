@@ -1,0 +1,26 @@
+<mat-toolbar class="example-toolbar">
+
+
+    <mat-drawer-container class="example-container">
+        <mat-drawer #drawer fullscreen>
+            <app-sidebar></app-sidebar>
+        </mat-drawer>
+        <mat-drawer-content>
+            <button mat-raised-button (click)="drawer.toggle()">
+                <button mat-icon-button aria-label="Example icon-button with menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </button>
+
+            <span>DashBoard</span>
+        </mat-drawer-content>
+    </mat-drawer-container>
+
+    <span class="example-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu"> {{userName}} </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="goBack()">Log Out</button>
+        <button mat-button (click)="addToCart()">CART</button>
+    </mat-menu>
+
+</mat-toolbar>

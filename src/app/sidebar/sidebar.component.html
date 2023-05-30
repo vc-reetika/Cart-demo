@@ -1,0 +1,24 @@
+<!-- <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer mode="side" opened> -->
+
+        <button type="button" mat-button (click)="goToDashboard()">
+            Dashboard
+        </button>
+        <button type="button" mat-button (click)="goToProduct()">
+            Products
+        </button>
+
+        <!-- <button type="button" mat-button [routerLink]="['/table']">
+            User Data
+        </button> -->
+    <!-- </mat-drawer> -->
+
+    <!-- <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+            Go to Side Nav
+          </button> -->
+          <router-outlet></router-outlet>
+          <!-- <app-table></app-table> -->
+
+    <!-- </div> -->
+<!-- </mat-drawer-container> -->

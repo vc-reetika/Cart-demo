@@ -1,0 +1,38 @@
+.example-card {
+    max-width: 400px;
+    margin: 15px;
+}
+
+.card{
+    width: 100%;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+mat-card-actions {
+    justify-content: space-around;
+}
+
+mat-card-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.discount{
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+}
+
+// td, th {
+//     // border: 1px solid #dddddd;
+//     text-align: left;
+//     padding: 8px;
+//   }

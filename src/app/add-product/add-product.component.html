@@ -1,0 +1,39 @@
+<app-header></app-header>
+
+<mat-toolbar class="example-toolbar">
+    <span class="example-spacer"></span>
+    <button mat-button (click)="goBackToProductList()">Go Back</button>
+</mat-toolbar>
+
+<form #newItemForm="ngForm" (ngSubmit)="onSubmit(newItemForm)">
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter a Item Name</mat-label>
+        <input type="text" name="itemName" id="itemName" placeholder="Item Name" matInput required ngModel
+            #itemName="ngModel">
+
+        <mat-error *ngIf="itemName.hasError('required')">
+            itemName is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field floatLabel="always">
+        <mat-label>Amount</mat-label>
+        <input matInput type="number" name="price" class="example-right-align" placeholder="0" min="1" required ngModel
+            #price="ngModel">
+        <span matTextPrefix> &#x20b9; &nbsp;</span>
+        <span matTextSuffix>.00</span>
+
+        <mat-error *ngIf="price.hasError('required')">
+            Price is <strong>required</strong>
+        </mat-error>
+        <mat-error *ngIf="price.hasError('min')">
+            Value Should be greater than 1
+        </mat-error>
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button>Submit</button>
+
+</form>
+
+<app-footer></app-footer>

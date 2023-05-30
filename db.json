@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "title": "TV",
+      "price": 10000,
+      "totalItem": 0,
+      "totalPrice": 10000,
+      "id": 1,
+      "description": ""
+    },
+    {
+      "title": "Bottle",
+      "price": 50,
+      "totalItem": 0,
+      "totalPrice": 50,
+      "id": 2,
+      "description": ""
+    },
+    {
+      "title": "Computer",
+      "price": 100000,
+      "totalItem": 0,
+      "totalPrice": 100000,
+      "id": 3,
+      "description": ""
+    },
+    {
+      "title": "Phone",
+      "price": 5000,
+      "totalItem": 0,
+      "totalPrice": 5000,
+      "id": 4,
+      "description": ""
+    }
+  ]
+}
